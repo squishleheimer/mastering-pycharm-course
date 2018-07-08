@@ -3,6 +3,7 @@ from models.album import Album
 # noinspection PyPackageRequirements
 from models.dbsession import DbSessionFactory
 
+query = "SELECT * FROM Album WHERE has_preview AND year > 2001"
 
 def main():
     DbSessionFactory.global_init()

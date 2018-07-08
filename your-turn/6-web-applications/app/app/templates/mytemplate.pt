@@ -1,0 +1,15 @@
+<div metal:use-macro="load: layout.pt">
+    <div metal:fill-slot="content">
+
+        <div class="content">
+            <h2>Orders</h2>
+            <div tal:repeat="o orders">
+                <div>
+                    <span style="font-weight: bold;">${o.name}</span>
+                    <span>${o.price}</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
